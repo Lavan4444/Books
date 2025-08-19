@@ -1,0 +1,187 @@
+COMPANY EDIT FORM - BUSINESS & FUNCTIONAL DOCUMENTATION
+========================================================
+
+Requirements checklist
+----------------------
+- [x] Business purpose of component
+- [x] How it fits into application workflow  
+- [x] Data displayed and processed
+- [x] All user interactions described
+- [x] Dropdowns, filters, buttons, inputs listed with purpose and options
+- [x] Business impact and decision-support description
+
+1. Business purpose
+-------------------
+The Company Edit Form serves as the primary business interface for creating and maintaining comprehensive company profiles within the client management system. It enables organizations to establish and update detailed client company records that serve as the foundation for business relationship management, project assignments, and strategic client engagement across all organizational functions.
+
+This form centralizes all essential company information into a structured, searchable record that supports sales processes, project planning, compliance requirements, and business development activities. By standardizing how company data is captured and maintained, it ensures consistent client information across teams and enables informed decision-making for business development and client relationship management.
+
+2. How it fits into the overall application workflow
+---------------------------------------------------
+The Company Edit Form operates as a foundational data entry point that feeds multiple downstream business processes:
+
+- Client Onboarding: Initial company setup during new client acquisition processes
+- Project Assignment: Company records link to projects and determine client-specific requirements and constraints
+- Business Development: Comprehensive company profiles support sales team targeting and relationship building
+- Compliance & Reporting: Company categories and revenue information support regulatory reporting and business intelligence
+- Communication Management: Contact information and social media links facilitate multi-channel client engagement
+
+Typical workflow integration:
+- Sales team creates company record → Project managers assign projects to companies → Teams access company details for project execution → Reporting systems aggregate company-based metrics for business analysis
+
+3. What data it displays or processes
+-------------------------------------
+The form captures and maintains comprehensive company information across multiple business dimensions:
+
+Basic Company Information:
+- Company Name: Primary business identifier used across all systems
+- Website: Digital presence and primary online reference
+- Email: Primary business communication channel
+- Phone Number: Direct contact information for business communications
+- Year Founded: Historical context for business relationship assessment
+- Specialties: Core business competencies and service offerings
+
+Company Classification & Structure:
+- Industry: Sector classification for market analysis and targeting
+- Company Size: Employee count ranges for resource planning and engagement strategies
+- Categories: Business classification (Micro, Small, Medium, Large Enterprise)
+- Groups: Revenue-based segmentation (Up to 5 Crore, Up to 50 Crore, Up to 250 Crore, Above 250 Crore)
+- Overview: Detailed business description and value proposition
+
+Location & Address Management:
+- Comprehensive address capture including Street 1, Street 2, City, State, Country, Postal Code
+- Address labeling (Work from Office, Work from Home, Work from Remote) for operational context
+- Interactive address editing through dedicated dialog interface
+
+Social Media & Digital Presence:
+- LinkedIn, Facebook, Twitter, Indeed profile URLs for comprehensive digital engagement tracking
+- Visual indicators and formatted input fields for each social platform
+
+System Administration & Privacy:
+- Creation and modification timestamps with user attribution for audit trails
+- Privacy controls with selective user access when confidential company information requires restricted visibility
+- Document attachment capabilities for contracts, agreements, and reference materials
+
+4. All user interactions possible within this component
+------------------------------------------------------
+Data Entry & Modification:
+- Input and edit basic company information including name, website, email, phone, founding year, and specialties
+- Select industry from predefined categories with search and filter capabilities
+- Choose company size from standardized employee count ranges
+- Select business category and revenue group classifications
+- Compose detailed company overview with multi-line text input
+
+Address Management:
+- Edit comprehensive address information through dedicated dialog interface
+- Select city, state, and country from predefined lists with search functionality
+- Input postal codes and assign address labels for operational context
+- Preview complete address in consolidated text area with edit trigger
+
+Social Media Profile Management:
+- Input social media URLs for LinkedIn, Facebook, Twitter, and Indeed profiles
+- Visual platform indicators provide immediate context for each social channel
+- Formatted input fields ensure consistent URL structure
+
+Privacy & Access Control:
+- Toggle privacy settings to restrict company information access
+- Select specific users who can view private company information when privacy is enabled
+- Multi-select interface for granular access control
+
+Document & File Management:
+- Upload company-related documents including contracts, agreements, and reference materials
+- File attachment supports multiple formats with size limitations for system performance
+- Document management supports business compliance and relationship documentation needs
+
+Workflow Actions:
+- Save company information with validation and confirmation feedback
+- Cancel changes with option to discard modifications and return to company listing
+- Navigation integration returns users to appropriate company management interfaces
+
+5. Dropdowns, filters, buttons, and input fields (purpose & options)
+-------------------------------------------------------------------
+
+Basic Information Fields:
+- Company Name (text input): Primary business identifier, often read-only when editing existing companies
+- Website (text input): Company website URL for digital presence tracking
+- Email (text input): Primary business communication email address
+- Phone Number (text input): Direct business contact number
+- Year Founded (text input): Company establishment year for relationship context
+- Specialties (text input): Core business services and competencies
+
+Classification Dropdowns:
+- Industry (filterable dropdown): Business sector classification with options including Information Technology, Healthcare, Finance, Manufacturing, Retail, and additional industry categories
+- Company Size (filterable dropdown): Employee count ranges from 1-10 employees up to 5001+ employees for resource planning context
+- Categories (dropdown): Business classification including Micro Enterprise, Small Enterprise, Medium Enterprise, Large Enterprise
+- Groups (dropdown): Revenue-based segmentation with options for Up to 5 Crore, Up to 50 Crore, Up to 250 Crore, Above 250 Crore
+
+Address Management Interface:
+- Street 1 & 2 (text inputs): Physical address components for location tracking
+- City (filterable dropdown): Major cities including Hyderabad, Chennai, Mumbai, Bangalore, Delhi
+- State (filterable dropdown): Regional classifications including Andhra Pradesh, Telangana, Tamil Nadu, Karnataka, Kerala
+- Country (filterable dropdown): National classifications including India, United States, Canada, Germany, Australia
+- Postal Code (text input): Specific location identifier for precise addressing
+- Label (dropdown): Address type classification with Work from Office, Work from Home, Work from Remote options
+
+Overview & Description:
+- Company Overview (multi-line text area): Detailed business description with auto-resize functionality for comprehensive company profiling
+
+Social Media Links:
+- LinkedIn URL (text input with icon): Professional networking profile with visual LinkedIn indicator
+- Facebook URL (text input with icon): Social media presence with Facebook branding
+- Twitter URL (text input with icon): Social media engagement with Twitter visual cues
+- Indeed URL (text input with icon): Employment platform presence with Indeed branding
+
+Privacy & Access Controls:
+- Private (checkbox): Toggle for restricting company information access
+- User IDs (multi-select): User selection interface for granular privacy control with options including Mahesh, Lavan, Vinay, Vasanth and additional organizational users
+
+System Fields:
+- Create Date (date field, read-only): Automatic timestamp for company record creation
+- Edit Date (date field, read-only): Automatic timestamp for latest modification
+- Created By (text field, read-only): User attribution for record creation
+- Edited By (text field, read-only): User attribution for latest modification
+
+File Management:
+- Attach Document (file upload): Multi-file upload capability for company documentation with size restrictions and format validation
+
+Action Buttons:
+- Save (primary button): Commits all changes with validation and user feedback
+- Cancel (secondary button): Discards changes and returns to company listing interface
+
+6. How this component supports business goals and decision-making
+-----------------------------------------------------------------
+
+Strategic Client Management:
+The comprehensive company profiling enables strategic client relationship management by providing complete business context for every client interaction. Sales teams can leverage industry classification, company size, and revenue information to tailor their approach and offerings. The historical founding information and specialties provide valuable context for understanding client business evolution and core competencies.
+
+Business Development & Sales Intelligence:
+Company categorization by size, revenue, and industry creates powerful segmentation capabilities for targeted business development activities. Sales teams can identify prospects within specific industry verticals, focus on companies within target revenue ranges, and develop industry-specific value propositions. The social media integration enables multi-channel engagement and digital relationship building.
+
+Project Planning & Resource Allocation:
+Company size and industry information directly supports project planning decisions including resource allocation, team composition, and delivery approach. Understanding client company structure enables appropriate stakeholder identification and communication strategies. Address information supports on-site delivery planning and regional team assignments.
+
+Compliance & Risk Management:
+Privacy controls and comprehensive audit trails support compliance requirements for client data management. Revenue classification and industry information support regulatory reporting requirements and risk assessment processes. Document attachment capabilities enable secure storage of contracts, NDAs, and compliance documentation.
+
+Market Analysis & Business Intelligence:
+Structured company data enables comprehensive market analysis including industry penetration, client distribution by geography and size, and revenue concentration analysis. This intelligence supports strategic planning, market expansion decisions, and competitive positioning analysis.
+
+Communication & Relationship Management:
+Centralized contact information and social media profiles enable consistent multi-channel client communication. Address management supports both digital and physical engagement strategies. The comprehensive company overview provides context for all client interactions and relationship building activities.
+
+Operational Efficiency:
+Standardized company data capture reduces redundant data entry across teams and systems. Integration with project assignment workflows eliminates manual lookup processes. Comprehensive company profiles reduce onboarding time for new team members joining client accounts.
+
+Privacy & Security Compliance:
+Granular privacy controls enable compliance with confidentiality agreements and data protection requirements. Selective user access supports need-to-know information sharing for sensitive client relationships. Audit trail capabilities support compliance reporting and security requirements.
+
+Decision Support Scenarios:
+- Market entry decisions based on client industry distribution and size analysis
+- Resource planning decisions based on client company size and location requirements  
+- Business development targeting based on industry specialization and revenue classification
+- Risk assessment based on client company stability indicators and historical information
+- Communication strategy development based on social media presence and digital engagement preferences
+
+File location
+-------------
+Saved as: d:\React\PMS2-1.0.code\TMS-2.0\TMS-2.0\CompanyEditForm Doc.txt

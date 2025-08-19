@@ -1,0 +1,170 @@
+CALENDER ACTIVE COMPONENT - BUSINESS DOCUMENTATION
+=================================================
+
+BUSINESS PURPOSE
+----------------
+The CalenderActive component serves as a comprehensive calendar and scheduling management system within the PMS/TMS application. It provides a centralized platform for managing all types of meetings, calls, events, and scheduled activities across projects and teams. This component enables organizations to track, schedule, and coordinate various business activities while maintaining detailed records of meeting outcomes and follow-up actions.
+
+APPLICATION WORKFLOW INTEGRATION
+---------------------------------
+1. **Project Management Integration**: Links calendar activities directly to specific projects (e.g., AI Generator Proj-101), ensuring all scheduled events are context-aware and project-focused.
+
+2. **Team Coordination**: Facilitates team-wide scheduling by allowing multiple team members to be associated with calendar events, supporting collaborative work environments.
+
+3. **Meeting Documentation**: Integrates with business documentation workflows by capturing Minutes of Meeting (MoM) for completed activities, creating audit trails for decision-making processes.
+
+4. **Task Management**: Connects scheduled activities with completion tracking, supporting project delivery timelines and accountability frameworks.
+
+5. **Workflow Continuity**: Enables follow-up scheduling and recurring events, ensuring business processes maintain momentum and consistency.
+
+DATA PROCESSING AND DISPLAY
+----------------------------
+The component processes and displays comprehensive calendar information including:
+
+**Event Information**:
+- Event types (Call, Meeting, Event, Others) with specific subtypes
+- Project associations with clear project identification codes
+- Team member assignments and user responsibilities
+- Detailed descriptions and subject lines for context
+
+**Scheduling Data**:
+- Start and end dates with time specifications
+- Completion status tracking for accountability
+- Privacy settings for sensitive meetings
+- Reminder configurations for proactive management
+
+**Business Documentation**:
+- Minutes of Meeting records for completed events
+- Description fields for meeting context and objectives
+- Priority levels for effective resource allocation
+- Follow-up action tracking and scheduling
+
+**Sample Data Context**:
+The system displays events like "Project Discussion Meeting" for AI Generator project, involving team members (mahesh, lavan, vinay, vasanth) with complete documentation of outcomes and next steps.
+
+USER INTERACTIONS AND INTERFACE ELEMENTS
+-----------------------------------------
+
+**Primary Actions** (24 Total User Interactions):
+
+1. **View Selected Events**: Eye icon button to view read-only details of selected calendar events
+2. **Edit Selected Events**: Pencil icon button to modify selected calendar events
+3. **Delete Selected Events**: Trash icon button to remove selected events with confirmation dialog
+4. **Hide Selected Events**: Eye-slash icon for visibility management
+5. **Clear Search**: Button to reset all search filters and return to full calendar view
+6. **Select Multiple Events**: Checkbox selection for bulk operations across multiple calendar entries
+7. **Sort by Type**: Column sorting for event categorization
+8. **Sort by SubType**: Secondary categorization sorting
+9. **Sort by Project**: Project-based organization of events
+10. **Sort by Subject**: Alphabetical sorting by meeting subject
+11. **Sort by Start Date**: Chronological organization of events
+12. **Sort by End Date**: End-date based sorting for deadline management
+13. **Sort by User ID**: User-based event organization
+14. **Filter by Type**: Real-time filtering by event type
+15. **Filter by SubType**: Subtype-specific filtering
+16. **Filter by Project**: Project-focused event filtering
+17. **Filter by Description**: Content-based search filtering
+18. **Filter by Team**: Team-specific event filtering
+19. **Filter by Subject**: Subject line filtering
+20. **Filter by Start Date**: Date range filtering for start dates
+21. **Filter by End Date**: Date range filtering for end dates
+22. **Filter by User ID**: User-specific event filtering
+23. **Toggle Completion Status**: Checkbox to mark events as completed/incomplete
+24. **Toggle Private Status**: Checkbox to control event privacy settings
+
+**Event Creation/Editing Interface** (18 Additional Interactions):
+
+25. **Select Event Type**: Dropdown with options (Call, Meeting, Event, Others)
+26. **Choose SubType**: Context-specific subtypes (Introductory Call, Training Session, Daily Stand-up, etc.)
+27. **Set Start Date**: Calendar picker for event start date
+28. **Set Start Time**: Time picker for precise scheduling
+29. **Set End Date**: Calendar picker for event end date
+30. **Set End Time**: Time picker for event conclusion
+31. **Select Project**: Dropdown linking events to specific projects
+32. **Enter Subject**: Text input for meeting subject/title
+33. **Enter Description**: Textarea for detailed event description
+34. **Set Priority**: Dropdown (Low, Medium, High) for importance levels
+35. **Mark as Completed**: Checkbox for completion status
+36. **Set as Private**: Checkbox for privacy control
+37. **Select User IDs**: Multi-select dropdown for participant selection when private
+38. **Enter Minutes of Meeting**: Rich text editor for meeting documentation
+39. **Save Event**: Button to save new or modified events
+40. **Cancel Operation**: Button to discard changes and close dialog
+41. **Link to Jobs/Work Types**: Integration with job/work type management
+42. **Confirm Deletion**: Dialog-based confirmation for delete operations
+
+DROPDOWNS, FILTERS, AND INPUT FIELDS
+-------------------------------------
+
+**Event Type Dropdown**:
+- Call: For phone-based communications
+- Meeting: For formal in-person or virtual meetings
+- Event: For special occasions or company events
+- Others: For miscellaneous activities
+
+**SubType Options**:
+- Introductory Call, Requirement Discussion, Daily Stand-up
+- Client Meeting, Feedback Session, Follow-up Call
+- Training Session: For skill development and knowledge transfer
+
+**Project Selection**:
+- AI Generator (proj-101): Primary AI development project
+- Resume Parser (proj-102): Document processing system
+- Chatbot Assistant (proj-103): Customer service automation
+- Image Enhancer AI (proj-104): Visual content improvement
+- Voice to Text Converter (proj-105): Audio transcription system
+
+**Priority Levels**:
+- Low: Routine activities with flexible timing
+- Medium: Standard business activities requiring attention
+- High: Critical activities requiring immediate focus
+
+**User Management**:
+- Multi-select functionality for team member assignment
+- Private event controls with user-specific visibility
+- Team collaboration features for shared activities
+
+**Time Management**:
+- Date pickers with calendar interface
+- Time selectors for precise scheduling
+- Reminder system for proactive notifications
+
+BUSINESS GOALS AND DECISION-MAKING SUPPORT
+------------------------------------------
+
+**Operational Efficiency**:
+- Centralizes all scheduling activities for improved coordination
+- Reduces scheduling conflicts through comprehensive visibility
+- Streamlines meeting management with integrated documentation
+
+**Project Management**:
+- Links all activities to specific projects for better tracking
+- Provides project-focused views for resource allocation
+- Enables project timeline management through scheduling
+
+**Team Collaboration**:
+- Facilitates team-wide scheduling and coordination
+- Supports multi-participant events and meetings
+- Enables transparent communication through shared calendars
+
+**Documentation and Compliance**:
+- Captures Minutes of Meeting for audit trails
+- Maintains detailed records of all business activities
+- Supports compliance requirements through comprehensive logging
+
+**Strategic Planning**:
+- Provides visibility into team and project activities
+- Enables resource planning through schedule analysis
+- Supports long-term planning through recurring event management
+
+**Performance Management**:
+- Tracks completion rates for scheduled activities
+- Enables analysis of meeting effectiveness and outcomes
+- Supports accountability through detailed activity records
+
+**Decision-Making Analytics**:
+- Offers comprehensive filtering for data analysis
+- Provides sorting capabilities for pattern identification
+- Enables export functionality for reporting and analysis
+
+The CalenderActive component serves as a mission-critical tool for organizational scheduling, enabling effective time management, team coordination, and project tracking while maintaining comprehensive documentation for business continuity and compliance purposes.

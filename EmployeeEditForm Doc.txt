@@ -1,0 +1,412 @@
+# EmployeeEditForm Component - Business Documentation
+
+## Component Overview
+
+**Component Name:** EmployeeEditForm  
+**Location:** Teams Management Module  
+**Primary Function:** Comprehensive Employee Creation and Management Interface  
+
+## Business Purpose
+
+The EmployeeEditForm component serves as the central hub for creating, editing, and managing comprehensive employee records within the organization's human resource management system. This sophisticated interface enables HR professionals and managers to capture, maintain, and update all essential employee information including personal details, organizational structure, contact information, skills assessment, document management, and career development tracking. The component facilitates systematic employee lifecycle management from onboarding through career progression, ensuring accurate record-keeping for effective human resource planning, compliance management, and strategic workforce development.
+
+## Application Workflow Integration
+
+### Within the Overall System:
+- **Human Resource Management:** Central employee creation and maintenance hub for comprehensive workforce management
+- **Organizational Structure:** Supports department hierarchy, reporting relationships, and team coordination
+- **Performance Management:** Enables skill tracking, career development, and performance evaluation integration
+- **Compliance Management:** Facilitates regulatory compliance through document management and audit trails
+- **Payroll Integration:** Provides essential employee data for salary processing and benefits administration
+- **Access Control:** Manages privacy settings and information security for sensitive employee data
+- **Talent Management:** Supports recruitment, onboarding, and career development processes
+
+### Business Process Flow:
+1. **Employee Onboarding** → Complete new employee profile creation with all essential information
+2. **Information Validation** → Systematic verification of personal, professional, and educational details
+3. **Document Collection** → Comprehensive document gathering and verification for compliance
+4. **Skills Assessment** → Professional competency evaluation and career path planning
+5. **System Integration** → Automatic integration with payroll, benefits, and performance systems
+6. **Ongoing Management** → Regular profile updates and career development tracking
+7. **Compliance Monitoring** → Continuous adherence to regulatory requirements and audit preparation
+
+## Data Display and Processing
+
+### Employee Information Management
+**Captures and processes comprehensive employee data including:**
+- **Personal Identity:** Full name management (Title, First, Middle, Last Name) with professional editing capabilities
+- **Organizational Assignment:** Company affiliation (Pranathi Software Services, Varun Digital Media, Vitel Global Communication, SPG)
+- **Role Classification:** Designation hierarchy (Software Engineer, Senior Software Engineer, Team Lead, Project Manager, Frontend Developer)
+- **Professional Details:** Total experience, skills assessment, and career progression tracking
+- **Contact Management:** Multiple email addresses, work phone, mobile phone, and comprehensive address management
+- **Organizational Structure:** Department and sub-department assignments with reporting manager relationships
+- **Work Arrangement:** Location preferences, shift timings, and employment type classification
+- **Document Portfolio:** Comprehensive document management for compliance and verification
+- **Skills Matrix:** Primary, secondary, and other skills categorization for competency tracking
+
+### Smart Data Processing:
+- **Identity Verification:** Comprehensive name management with title and multi-part name support
+- **Skills Intelligence:** Professional competency tracking with multi-level skill categorization
+- **Address Standardization:** Geographic data validation with international address support
+- **Document Classification:** Systematic document categorization for compliance and audit purposes
+- **Privacy Management:** Granular access control and information security protocols
+
+## User Interactions and Interface Elements
+
+### Primary Action Controls
+1. **Save Button:**
+   - **Purpose:** Preserve all employee information and create/update employee record
+   - **Action:** Validates comprehensive data and commits employee profile to system
+   - **Navigation:** Returns to employee listing page upon successful save
+   - **Integration:** Triggers system integration with payroll and HR systems
+
+2. **Cancel Button:**
+   - **Purpose:** Abandon current changes and exit without saving
+   - **Action:** Discards all modifications and returns to employee overview
+   - **Confirmation:** Prevents accidental data loss through navigation warnings
+
+### Basic Information Section
+
+#### Personal and Professional Identity:
+3. **Full Name Field with Advanced Editor:**
+   - **Purpose:** Comprehensive name management and professional identity
+   - **Current Value:** "Lavankumar Kalvala"
+   - **Features:** Advanced name editing dialog with Title, First, Middle, Last name components
+   - **Business Use:** Professional identity management and official record accuracy
+
+4. **Company Selection Dropdown:**
+   - **Purpose:** Organizational affiliation and company assignment
+   - **Options:** 
+     - Pranathi Software Services
+     - Varun Digital Media
+     - Vitel Global Communication
+     - SPG
+   - **Special Actions:** Add Company, Edit Company
+   - **Business Use:** Multi-company workforce management and organizational structure
+
+5. **Designation Dropdown:**
+   - **Purpose:** Role classification and career level identification
+   - **Options:**
+     - Software Engineer
+     - Senior Software Engineer
+     - Team Lead
+     - Project Manager
+     - Frontend Developer
+   - **Special Actions:** Add Designation, Edit Designation
+   - **Business Use:** Career progression tracking and organizational hierarchy
+
+6. **Status Selection:**
+   - **Purpose:** Employee current status and availability tracking
+   - **Options:** Active (default), Inactive, DND (Do Not Disturb), Blacklisted
+   - **Business Use:** Workforce availability management and status monitoring
+
+7. **Total Experience Field:**
+   - **Purpose:** Professional experience quantification and skill assessment
+   - **Format:** Decimal input with precision (e.g., "2.0" years)
+   - **Business Use:** Experience-based role assignment and compensation planning
+
+### Contact Information Section
+
+#### Communication Management:
+8. **Email 1 (Primary) Field:**
+   - **Purpose:** Primary business communication channel
+   - **Example:** "lavan@varundigitalmedia.com"
+   - **Validation:** Email format verification and domain validation
+   - **Business Use:** Official corporate communications and system notifications
+
+9. **Email 2 (Secondary) Field:**
+   - **Purpose:** Alternative communication channel
+   - **Example:** "lavan9@gmail.com"
+   - **Business Use:** Backup communications and personal contact management
+
+10. **Work Phone Field:**
+    - **Purpose:** Official business communication line
+    - **Example:** "9876543211"
+    - **Business Use:** Internal communications and business calls
+
+11. **Mobile Phone Field:**
+    - **Purpose:** Direct personal communication channel
+    - **Example:** "9876543200"
+    - **Validation:** Mobile number format verification
+    - **Business Use:** Emergency contact and mobile communications
+
+12. **Address Management System:**
+    - **Purpose:** Comprehensive geographic information management
+    - **Features:** Advanced address editing dialog with multi-component support
+    - **Components:**
+      - **Street 1:** Primary address line (White house, Block-III, Begumpet)
+      - **Street 2:** Secondary address line (optional)
+      - **City Dropdown:** Searchable city selection (Hyderabad, Chennai, Mumbai, Bangalore, Delhi)
+      - **State Dropdown:** State/province selection (Andhra Pradesh, Telangana, Tamil Nadu, Karnataka, Kerala)
+      - **Country Dropdown:** International country selection (India, United States, Canada, Germany, Australia)
+      - **Postal Code:** Zip/postal code entry (500016)
+      - **Label Dropdown:** Address type classification (Work from Office, Work from Home, Work from Remote)
+    - **Business Use:** Location-based services, shipping, and work arrangement management
+
+### General Information Section
+
+#### Organizational Structure:
+13. **Department Dropdown:**
+    - **Purpose:** Primary department assignment and organizational classification
+    - **Options:**
+      - Information Technology
+      - Human Resources
+      - Finance
+      - Marketing
+      - Sales
+    - **Special Actions:** Add Department, Edit Department
+    - **Business Use:** Organizational structure management and department-based analytics
+
+14. **Sub Department Dropdown:**
+    - **Purpose:** Specialized team assignment within departments
+    - **Options:**
+      - Frontend Development
+      - Backend Development
+      - Quality Assurance
+      - DevOps
+      - UI/UX Design
+    - **Special Actions:** Add Sub Department, Edit Sub Department
+    - **Business Use:** Specialized skill team management and project assignment
+
+15. **Work Location Dropdown:**
+    - **Purpose:** Physical work location and arrangement management
+    - **Options:**
+      - Hyderabad Office
+      - Bangalore Office
+      - Mumbai Office
+      - Remote Work
+      - Client Location
+    - **Special Actions:** Add Work Location, Edit Work Location
+    - **Business Use:** Facility management and work arrangement optimization
+
+16. **Shift Timings Dropdown:**
+    - **Purpose:** Work schedule and timing arrangement management
+    - **Options:**
+      - Day Shift (9:00 AM - 6:00 PM)
+      - Night Shift (9:00 PM - 6:00 AM)
+      - Evening Shift (2:00 PM - 11:00 PM)
+      - Flexible Hours
+      - Rotational Shift
+    - **Special Actions:** Add Shift Timing, Edit Shift Timing
+    - **Business Use:** Workforce scheduling and operational efficiency
+
+17. **Employee Status Dropdown:**
+    - **Purpose:** Current employment status and workforce classification
+    - **Options:**
+      - Active
+      - Inactive
+      - On Leave
+      - Probation
+      - Terminated
+    - **Special Actions:** Add Employee Status, Edit Employee Status
+    - **Business Use:** Workforce status tracking and HR compliance
+
+18. **Employee Type Dropdown:**
+    - **Purpose:** Employment classification and contract type management
+    - **Options:**
+      - Full-time
+      - Part-time
+      - Contract
+      - Intern
+      - Consultant
+    - **Special Actions:** Add Employee Type, Edit Employee Type
+    - **Business Use:** Contract management and compensation planning
+
+19. **Reporting Manager Dropdown:**
+    - **Purpose:** Organizational hierarchy and reporting relationship management
+    - **Options:**
+      - John Smith - Project Manager
+      - Sarah Johnson - Team Lead
+      - Michael Brown - Senior Manager
+      - Emily Davis - Technical Lead
+      - David Wilson - Department Head
+    - **Special Actions:** Add Reporting Manager, Edit Reporting Manager
+    - **Business Use:** Hierarchy management and performance reporting
+
+20. **Date of Joining Calendar:**
+    - **Purpose:** Employment start date tracking and tenure calculation
+    - **Example:** "01/01/2025"
+    - **Features:** Calendar picker with date validation
+    - **Business Use:** Tenure tracking and benefits calculation
+
+21. **Date of Birth Calendar:**
+    - **Purpose:** Personal information and age-related compliance
+    - **Example:** "20/02/2025"
+    - **Business Use:** Age verification and birthday management
+
+22. **Categories TreeSelect:**
+    - **Purpose:** Skill categorization and competency classification
+    - **Structure:** Hierarchical skill tree (Skills → Frontend/Backend/QA → Specific Technologies)
+    - **Examples:** React, Angular, Bootstrap (Frontend); Python, Java, C# (Backend)
+    - **Business Use:** Skill-based project assignment and training needs analysis
+
+23. **Groups TreeSelect:**
+    - **Purpose:** Team grouping and project assignment classification
+    - **Structure:** Similar hierarchical structure for team management
+    - **Business Use:** Team coordination and project resource allocation
+
+### Privacy and Access Control
+
+#### Security Management:
+24. **Private Checkbox:**
+    - **Purpose:** Restrict employee information access to selected users
+    - **Action:** Enables privacy mode for sensitive employee information
+    - **Integration:** Links with user selection multi-select for granular control
+
+25. **User Selection Multi-Select:**
+    - **Purpose:** Granular access control for private employee records
+    - **Options:** Mahesh, Lavan, Vinay, Vasantha
+    - **Display:** Comma-separated user list with maximum label display
+    - **Business Use:** Confidential employee management and information security
+
+### Resume and Document Management
+
+#### Document Portfolio:
+26. **Resume Attachment File Upload:**
+    - **Purpose:** Employee resume and CV management
+    - **Features:** File upload with size validation (5MB maximum)
+    - **Supported Formats:** Multiple file format support
+    - **Business Use:** Recruitment tracking and profile documentation
+
+### Skills Management Section
+
+#### Professional Competency Tracking:
+27. **Primary Skills Multi-Select:**
+    - **Purpose:** Core competency identification and skill assessment
+    - **Options:** JavaScript, React, Node.js (with multi-selection capability)
+    - **Example:** "Javascript, React"
+    - **Business Use:** Project assignment and skill-based resource allocation
+
+28. **Secondary Skills Dropdown:**
+    - **Purpose:** Supporting skills and complementary competencies
+    - **Options:** SQL, Python, Java, PHP (filterable and editable)
+    - **Example:** "Typescript"
+    - **Business Use:** Cross-functional project assignment and skill development
+
+29. **Other Skills Dropdown:**
+    - **Purpose:** Additional skills and emerging competencies
+    - **Options:** Git, Docker, Kubernetes, AWS (filterable and editable)
+    - **Example:** "Python, Django"
+    - **Business Use:** Technology stack planning and innovation capabilities
+
+### Document Management System
+
+#### Comprehensive Document Portfolio:
+30. **Document Collection DataTable:**
+    - **Purpose:** Systematic document management and compliance tracking
+    - **Columns:** Type, Subject, Attachment
+    - **Current Example:** Aadhar - "Aadhar card"
+    - **Business Use:** Regulatory compliance and document verification
+
+31. **Add Document Dialog:**
+    - **Purpose:** Structured document addition with categorization
+    - **Components:**
+      - **Document Type Dropdown:** Comprehensive categorization system including:
+        - **Proof of Identity:** Aadhaar Card, Passport, Voter ID, PAN Card, Driver's License
+        - **Educational Qualification:** Mark Sheets, Certificates, Professional Certifications
+        - **Employment-Related:** Offer Letter, Resume, Experience Certificates, Salary Slips
+        - **Contact and Address Proof:** Permanent/Current Address Proof, Verification Documents
+        - **Financial and Tax-Related:** PAN Card, Bank Details, Form 16, Tax Documents
+        - **Personal and Medical:** Photographs, Birth Certificate, Medical Fitness Certificate
+        - **Legal and Compliance:** Background Verification, NDA, Employment Bond
+        - **Statutory Documentation:** EPF Registration, ESI Form, Professional Tax
+        - **Emergency Contact:** Emergency Information, Nominee Details, References
+        - **Specialized Documents:** Professional Licenses, Security Clearances, Work Permits
+      - **Subject Field:** Document description and identification
+      - **File Attachment:** Document upload with validation
+
+### System Fields Section
+
+#### Audit and Tracking Information:
+32. **Create Date Calendar:**
+    - **Purpose:** Employee record creation timestamp tracking
+    - **Display:** Read-only calendar showing "27/02/2025"
+    - **Business Use:** Historical analysis and data lifecycle management
+
+33. **Edit Date Calendar:**
+    - **Purpose:** Last modification timestamp tracking
+    - **Display:** Read-only calendar showing recent changes
+    - **Business Use:** Change tracking and data freshness assessment
+
+34. **Created By Field:**
+    - **Purpose:** Employee record originator identification
+    - **Display:** Read-only field showing "Harish"
+    - **Business Use:** Accountability and responsibility tracking
+
+35. **Edited By Field:**
+    - **Purpose:** Recent editor identification
+    - **Display:** Read-only field showing last modifier
+    - **Business Use:** Change management and version control
+
+### Advanced Features
+
+#### Duplicate Management:
+36. **Merge Dialog:**
+    - **Purpose:** Handle duplicate employee records through intelligent merging
+    - **Trigger:** Automatic detection during save operation
+    - **Options:** Yes (merge), No (create separate)
+    - **Business Use:** Data quality management and duplicate prevention
+
+## Business Goals and Decision-Making Support
+
+### Human Resource Management and Compliance:
+- **Employee Lifecycle Management:** Comprehensive tracking from onboarding through career development and separation
+- **Regulatory Compliance:** Systematic document collection and verification for labor law adherence
+- **Identity Verification:** Multi-component name management and personal information accuracy
+- **Audit Trail Management:** Complete change tracking for compliance and accountability
+
+### Organizational Structure and Team Management:
+- **Hierarchy Visualization:** Clear reporting relationships and organizational structure mapping
+- **Department Coordination:** Systematic department and sub-department assignment for effective team management
+- **Work Arrangement Optimization:** Flexible work location and shift timing management for operational efficiency
+- **Team Building:** Skills-based team formation and project resource allocation
+
+### Talent Management and Development:
+- **Skills Assessment:** Comprehensive competency tracking for career development and training needs
+- **Career Progression:** Designation tracking and advancement opportunity identification
+- **Performance Integration:** Foundation for performance management and goal setting
+- **Succession Planning:** Talent pipeline development through skill and experience analysis
+
+### Workforce Planning and Analytics:
+- **Capacity Planning:** Employee availability and work arrangement analysis for resource optimization
+- **Skills Gap Analysis:** Competency assessment for training program development and hiring strategies
+- **Experience Distribution:** Workforce experience analysis for project assignment and mentoring programs
+- **Geographic Distribution:** Location-based workforce analysis for facility planning and remote work policies
+
+### Communication and Collaboration:
+- **Contact Management:** Comprehensive communication channel management for effective coordination
+- **Emergency Preparedness:** Contact information and address management for crisis response
+- **Team Coordination:** Department and reporting structure clarity for efficient collaboration
+- **Information Accessibility:** Privacy controls for sensitive information while maintaining operational transparency
+
+### Operational Efficiency and Process Improvement:
+- **Standardized Onboarding:** Consistent employee information collection and verification processes
+- **Document Automation:** Systematic document management reducing manual processing overhead
+- **Data Quality Assurance:** Validation and verification processes ensuring accurate employee records
+- **System Integration:** Seamless integration with payroll, benefits, and performance management systems
+
+### Strategic Planning and Business Intelligence:
+- **Workforce Analytics:** Employee demographic and skill analysis for strategic planning
+- **Talent Acquisition:** Historical data analysis for recruitment strategy optimization
+- **Retention Analysis:** Employee lifecycle tracking for retention program development
+- **Compensation Planning:** Experience and skill-based compensation strategy development
+
+### Risk Management and Security:
+- **Information Security:** Privacy controls and access management for sensitive employee data
+- **Compliance Risk Mitigation:** Comprehensive document management for regulatory adherence
+- **Identity Protection:** Secure personal information management with audit capabilities
+- **Access Control:** Granular permission management for confidential employee information
+
+### Innovation and Technology Integration:
+- **Skills Evolution:** Emerging technology skill tracking for innovation capability assessment
+- **Digital Transformation:** Technology competency analysis for digital initiative planning
+- **Training Effectiveness:** Skill development tracking for training program optimization
+- **Technology Adoption:** Employee technology readiness assessment for system implementation
+
+### Quality Assurance and Continuous Improvement:
+- **Data Accuracy:** Comprehensive validation and verification for reliable employee records
+- **Process Standardization:** Consistent employee management procedures across the organization
+- **User Experience:** Intuitive interface design for efficient HR operations
+- **Feedback Integration:** Continuous improvement through user feedback and process optimization
+
+This comprehensive employee management system empowers organizations to achieve superior human resource management, enhanced organizational efficiency, and strategic workforce development through intelligent employee information management and data-driven decision making. The system ensures operational excellence while supporting both immediate HR needs and long-term strategic business objectives.

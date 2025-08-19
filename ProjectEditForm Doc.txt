@@ -1,0 +1,124 @@
+PROJECT EDIT FORM - BUSINESS & FUNCTIONAL DOCUMENTATION
+========================================================
+
+Task receipt & plan
+-------------------
+I will produce a client-facing, non-technical description of the `ProjectEditForm` component covering purpose, workflow role, displayed data, user interactions, UI controls (with options), and business value; then save it as `ProjectEditForm Doc.txt` in the project root.
+
+Requirements checklist
+----------------------
+- [x] Business purpose of component
+- [x] How it fits into application workflow
+- [x] Data displayed / processed
+- [x] All user interactions described
+- [x] All dropdowns, filters, buttons, inputs listed with purpose and options
+- [x] How component supports business goals and decision-making
+
+1. Business purpose
+-------------------
+The Project Edit Form is the primary business interface for creating, reviewing and updating project records inside the Project Management System. It lets project managers and administrators record essential project metadata (identifiers, ownership), define timelines, attach and manage project documents, capture rationale for schedule changes, and maintain project notes and execution phases.
+
+In short: it converts planning decisions and project details into an auditable, shareable project record that drives assignment, planning and reporting across the organization.
+
+2. How it fits into the overall application workflow
+---------------------------------------------------
+- Entry point for new project creation and for editing existing projects.
+- The saved project record feeds downstream modules: task creation, resource allocation, time tracking, billing, reporting, and dashboards.
+- Provides system fields and audit data so other teams (finance, delivery managers, PMO) can trust project metadata for decision-making.
+- Acts as the authoritative source used when migrating projects from external sources or when synchronizing project state with other internal tools.
+
+Typical user flow:
+- User opens the form to create or edit a project → enters identification and ownership → sets timeline and status → attaches documents → adds contextual notes → saves. The project then becomes available to execution and reporting modules.
+
+3. What data it displays or processes
+-------------------------------------
+Visible and editable project data includes:
+- Primary identifiers: Project Code and Project Name.
+- Organisational context: Module (functional area), Company (client or internal owner), Project Manager.
+- Project status: lifecycle state (planning, in-progress, testing, on hold, completed, cancelled).
+- Timeline: Start Date, End Date, Extended End Date and a free-text Reason for Delay.
+- Documents: list of project attachments (type, subject, file) with an “Add Document” dialog to attach more files and select document types.
+- System / audit fields (read-only): Created By, Created Date, Last Modified By, Last Modified Date.
+- Privacy controls: a Private toggle and explicit user selections to restrict access to specific users.
+- Notes: rich-text notes with add, edit and delete capabilities plus a timestamp and author for each note.
+- Project description: rich-text editor for a structured overview; an AI-assisted helper is present (UI button) to help write descriptions.
+- Execution Phases & Estimates: embedded tables (phase breakdown, estimates, and delay reasons) visible via integrated components.
+
+4. All user interactions possible within this component
+------------------------------------------------------
+- Create or edit basic project identifiers (code, name).
+- Select or change Module, Company and Project Status via pickers.
+- Set project timeline using date pickers for start, end and extended end.
+- Enter a textual reason for delays, used for escalation and audit.
+- Attach documents by opening an Add Document dialog, selecting a document type from grouped categories (Project Documentation, Legal and Compliance, Development Assets), providing a description and uploading a file.
+- Toggle privacy on/off and, when private, select specific users who can access the project.
+- View existing attached documents and see whether an attachment exists.
+- Add, edit and delete project notes with a rich text editor; each note is recorded with timestamp and author.
+- Write or edit the project description in a rich text editor; optionally use the AI helper button to generate or enhance text.
+- Inspect and interact with project execution phase tables and delay estimations (via embedded components) to manage scope, effort and phase status.
+- Save the project (Save button) which triggers confirmation/feedback messages and returns to the project list; or Cancel which discards changes and returns to the project list.
+
+5. Dropdowns, filters, buttons, and input fields (purpose & options)
+-------------------------------------------------------------------
+Primary inputs and controls (client-friendly descriptions):
+
+Identification & Ownership
+- Project Code (text input): unique identifier used across systems and reports.
+- Project Name (text input): human-friendly project title.
+- Module (work-type picker): choose the functional module the project belongs to (examples shown: User Management Module, Authentication Module, Payment Gateway, Reporting Module, Admin Dashboard). Also allows adding or editing module entries.
+- Company (work-type picker): choose the project’s client or owning company (list of companies is available and can be extended).
+- Project Manager (text input): person responsible for delivery.
+- Project Status (work-type picker): choose lifecycle state. Shown status options include: Planning, In Progress, Testing, On Hold, Completed, Cancelled. The status picker also supports adding/editing status entries.
+
+Timeline & Delay
+- Start Date, End Date, Extended End Date (date pickers): set the baseline and revised schedule using a calendar control.
+- Reason for Delay (text input): optional justification used for escalation and record-keeping.
+
+Documents
+- Add More (link): opens Add Document dialog.
+- Document Type (grouped dropdown): choose from grouped categories such as Project Documentation, Legal and Compliance, Development Assets. Each group contains sensible sub-types (e.g., Project Requirements, Technical Specifications, Project Charter, API Documentation, etc.).
+- Description (text input): short explanation of the document’s purpose.
+- Attachment (file upload): attach a file; accepted types are general (accept="*/*") with size limits enforced.
+
+System Fields
+- Created By, Created Date, Last Modified By, Last Modified Date (read-only): maintained for audit and traceability.
+
+Privacy & Access
+- Private (checkbox): when checked, project becomes restricted.
+- User IDs (multiselect): visible when Private is set; select users who are granted access (example values shown: mahesh, lavan, vinay, vasanth).
+
+Notes and Description
+- Notes Editor (rich-text editor): create and edit internal notes. Notes have Save and Cancel actions. Each note records the author and a timestamp.
+- Project Description (rich-text editor): free-form summary and objectives. A “Write with AI” button is in the UI to assist in drafting text.
+
+Action Buttons
+- Save (button): commits changes, shows a success message and returns user to the project list.
+- Cancel (button): discards changes and returns to the project list; shows a cancel message.
+- Add Document within dialog (button): saves the uploaded document and metadata to the project’s attachments.
+- Note controls: small edit and delete buttons next to each note.
+
+6. How this component supports business goals and decision-making
+-----------------------------------------------------------------
+Operational and strategic benefits:
+- Single source of truth: centralizes all key project metadata so delivery teams, PMO, finance and stakeholders operate from consistent data.
+- Faster onboarding & reduced admin overhead: bulk-friendly form (with attachments and rich text notes) speeds up project setup and reduces time-to-execution.
+- Improved accountability: clear assignment of Project Manager and status supports RACI-style ownership and faster escalation when timelines slip.
+- Better schedule governance: Start/End/Extended dates and an explicit Reason for Delay enable structured tracking of slippage and credible inputs into portfolio forecasts and capacity planning.
+- Documented decision trail: attachments, notes, created/modified system fields and timestamps create an audit trail suitable for compliance, audits and client queries.
+- Privacy and access control: per-project privacy and explicit user selection support sensitive projects or NDA-protected work.
+- Informed resourcing and prioritization: the module and company fields together with execution phase estimates feed resource planning and prioritization decisions (which projects to staff, which to delay).
+- Improved reporting & BI: structured fields (codes, status, dates, company) drive consistent reporting and reliable KPIs across the portfolio (on-time delivery, backlog, overdue projects).
+- Collaboration: integrated notes, document attachments and embedded phase/estimate tables make the form a collaboration hub where decisions and evidence sit together.
+
+Usage scenarios where this form directly enables business value:
+- New client onboarding: capture contractual documents, owner, and timeline to kick off delivery.
+- Change requests: record an Extended End Date and Reason for Delay to drive approval workflows and budget re-forecast.
+- Audits & compliance: produce an auditable record of who created and updated project information and when.
+- Portfolio prioritization: use status and module/category to filter and group projects for executive reviews.
+
+
+
+Progress update & next steps
+---------------------------
+- I read `ProjectEditForm.js`, produced a client-focused specification, and saved it as `ProjectEditForm Doc.txt` in the workspace.
+- Next: if you want, I can also generate a short one-page summary slide, or extract the list of fields into a CSV for product owners to import into tracking tools. Which would you prefer next?

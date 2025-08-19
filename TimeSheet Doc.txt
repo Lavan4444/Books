@@ -1,0 +1,287 @@
+# TimeSheet Component - Business Documentation
+
+## Component Overview
+
+**Component Name:** TimeSheet  
+**Location:** Time Tracking Module  
+**Primary Function:** Comprehensive Employee Time Management and Project Tracking Interface  
+
+## Business Purpose
+
+The TimeSheet component serves as the central time management and project tracking system for organizations to monitor, record, and analyze employee work hours across multiple projects and tasks. This comprehensive interface enables accurate time allocation tracking, project progress monitoring, and billing/payroll calculations. The component facilitates systematic recording of daily work activities, ensuring precise project costing, resource allocation optimization, and compliance with time reporting requirements for both internal management and client billing purposes.
+
+## Application Workflow Integration
+
+### Within the Overall System:
+- **Project Management:** Central hub for tracking time allocation across multiple active projects and initiatives
+- **Resource Planning:** Enables workforce capacity planning and resource optimization across organizational projects
+- **Billing and Invoicing:** Provides accurate time data for client billing, project costing, and financial reporting
+- **Performance Management:** Supports employee productivity analysis and project efficiency assessment
+- **Payroll Processing:** Delivers precise time data for payroll calculations and overtime management
+- **Client Reporting:** Generates time-based reports for client transparency and project progress communication
+- **Budget Control:** Monitors project time budgets and alerts for budget variance management
+
+### Business Process Flow:
+1. **Project Assignment** → Employees select active projects and associated tasks
+2. **Daily Time Entry** → Real-time logging of work hours against specific projects and tasks
+3. **Weekly Review** → Comprehensive review and validation of weekly time allocations
+4. **Manager Approval** → Supervisory review and approval of submitted timesheets
+5. **System Integration** → Automatic integration with billing, payroll, and project management systems
+6. **Reporting and Analysis** → Generation of time-based reports for management and client communication
+7. **Historical Tracking** → Long-term time pattern analysis for resource planning and optimization
+
+## Data Display and Processing
+
+### Time Tracking Management
+**Captures and processes comprehensive time allocation data including:**
+- **Project Identification:** Active project selection (PSS - ATS v2.0, Sample use cases - Time and Material)
+- **Task Specification:** Specific task assignment (Layout Design, Workflow, Sample Task 1, ATS Revised Architecture)
+- **Daily Time Entry:** Hour-by-hour tracking across business days (Monday through Friday)
+- **Time Validation:** Format verification (hh:mm) and data accuracy checking
+- **Automatic Calculations:** Real-time computation of daily totals, row totals, and weekly summaries
+- **Historical Data:** Week-by-week navigation and historical time record access
+- **User Attribution:** Employee-specific time tracking and responsibility assignment
+
+### Smart Data Processing:
+- **Time Format Validation:** Automatic verification of time entry format (hh:mm) with error prevention
+- **Automatic Calculations:** Real-time computation of daily and weekly totals across all projects
+- **Data Consistency:** Cross-validation of time entries to ensure accuracy and completeness
+- **Week Navigation:** Intelligent week-by-week data organization with calendar integration
+- **Project Integration:** Dynamic project and task selection with real-time availability
+
+## User Interactions and Interface Elements
+
+### Primary Time Management Controls
+
+#### Navigation and Date Management:
+1. **Week Navigation Controls:**
+   - **Previous Week Button (◀):** Navigate to previous week's timesheet data
+   - **Next Week Button (▶):** Move to following week's timesheet records
+   - **Current Week Display:** Shows active week range "This week, [Start Date] → [End Date]"
+   - **Home Button (🏠):** Quick navigation to current week view
+   - **Purpose:** Enables seamless navigation through historical and future time periods
+
+2. **User Selection Dropdown:**
+   - **Purpose:** Switch between different employee timesheets for management review
+   - **Options:** Ravi Teja, Lavankumar, Teja
+   - **Default:** Mahesh Kumar Bhoga
+   - **Business Use:** Manager oversight and team time tracking coordination
+
+3. **View Toggle (Week/Day):**
+   - **Purpose:** Switch between weekly overview and daily detailed view
+   - **Options:** Week (default), Day
+   - **Features:** Segmented toggle with visual active state indication
+   - **Business Use:** Flexible time tracking granularity based on user preferences
+
+### Action Controls:
+4. **Submit Approval Button:**
+   - **Purpose:** Submit completed timesheet for managerial approval
+   - **Action:** Triggers approval workflow and locks timesheet for editing
+   - **Business Use:** Formal timesheet submission process for payroll and billing
+
+5. **Upload Timesheet Button:**
+   - **Purpose:** Import time data from external sources or backup files
+   - **Features:** File upload capability with validation
+   - **Business Use:** Bulk time entry and system integration support
+
+### Project and Task Management
+
+#### Dynamic Project Selection:
+6. **Project Dropdown Column:**
+   - **Purpose:** Select active projects for time allocation
+   - **Options:** 
+     - AI Generator
+     - Resume Parser
+     - Chatbot Assistant
+     - Image Enhancer AI
+     - Voice to Text Converter
+     - E-commerce Recommender
+   - **Special Actions:** Add Project, Edit Project
+   - **Business Use:** Accurate project time allocation and resource tracking
+
+7. **Task Dropdown Column:**
+   - **Purpose:** Specify detailed tasks within selected projects
+   - **Options:**
+     - Add User Role Feature
+     - Generate Monthly Report
+     - Fix Login Timeout Bug
+     - Integrate PF Calculation
+   - **Special Actions:** Add Task, Edit Task
+   - **Business Use:** Granular activity tracking for project management and billing
+
+### Time Entry Interface
+
+#### Daily Time Columns:
+8. **Monday Time Entry:**
+   - **Purpose:** Record work hours for Monday
+   - **Format:** hh:mm (hours:minutes)
+   - **Features:** Click-to-edit with format validation
+   - **Visual:** Today indicator with highlighted background
+   - **Daily Total:** Automatic calculation displayed in column header
+
+9. **Tuesday Time Entry:**
+   - **Purpose:** Record work hours for Tuesday
+   - **Format:** hh:mm (hours:minutes)
+   - **Features:** Real-time validation and error messaging
+   - **Daily Total:** Automatic sum of all Tuesday entries
+
+10. **Wednesday Time Entry:**
+    - **Purpose:** Record work hours for Wednesday
+    - **Format:** hh:mm (hours:minutes)
+    - **Features:** Placeholder text "hh:mm" for empty fields
+    - **Daily Total:** Live calculation with immediate updates
+
+11. **Thursday Time Entry:**
+    - **Purpose:** Record work hours for Thursday
+    - **Format:** hh:mm (hours:minutes)
+    - **Features:** Input validation with toast notifications for errors
+    - **Daily Total:** Automatic aggregation across all Thursday entries
+
+12. **Friday Time Entry:**
+    - **Purpose:** Record work hours for Friday
+    - **Format:** hh:mm (hours:minutes)
+    - **Features:** Auto-save functionality with data persistence
+    - **Daily Total:** Real-time total calculation and display
+
+### Summary and Calculation Features
+
+#### Automatic Totals:
+13. **Row Total Column:**
+    - **Purpose:** Display total hours per project/task combination
+    - **Calculation:** Automatic sum of Monday through Friday entries
+    - **Display:** Badge format with prominent visual indication
+    - **Business Use:** Project-specific time allocation analysis
+
+14. **Daily Column Totals:**
+    - **Purpose:** Show total hours worked per day across all projects
+    - **Location:** Column headers and footer summary
+    - **Features:** Real-time updates with each time entry
+    - **Business Use:** Daily productivity tracking and capacity planning
+
+15. **Weekly Grand Total:**
+    - **Purpose:** Display total hours worked across entire week
+    - **Location:** Total column header and footer summary
+    - **Calculation:** Sum of all daily totals
+    - **Business Use:** Weekly productivity analysis and payroll calculation
+
+### Time Entry Management
+
+#### Row Operations:
+16. **Add Timesheet Row Button:**
+    - **Purpose:** Create new project/task time entry rows
+    - **Action:** Adds blank row with highlighted new entry indicator
+    - **Features:** Automatic row highlighting for new entries
+    - **Business Use:** Support for multiple concurrent projects and tasks
+
+17. **Delete Row Button (🗑️):**
+    - **Purpose:** Remove individual time entry rows
+    - **Location:** Right-most column for each row
+    - **Features:** Tooltip confirmation and immediate removal
+    - **Business Use:** Error correction and time entry cleanup
+
+18. **Sort Button:**
+    - **Purpose:** Organize timesheet rows by project, task, or time allocation
+    - **Features:** Multiple sort criteria with visual indicators
+    - **Business Use:** Improved data organization and review efficiency
+
+19. **Copy Previous Week Button:**
+    - **Purpose:** Duplicate previous week's project/task structure
+    - **Action:** Imports project and task assignments without time values
+    - **Business Use:** Efficiency for recurring project work and template creation
+
+### Data Validation and Error Handling
+
+#### Time Format Validation:
+20. **Automatic Format Checking:**
+    - **Purpose:** Ensure proper time format entry (hh:mm)
+    - **Features:** Real-time validation with immediate error feedback
+    - **Error Messaging:** Toast notifications for invalid formats
+    - **Business Use:** Data quality assurance and entry error prevention
+
+21. **Empty Field Handling:**
+    - **Purpose:** Manage blank time entries appropriately
+    - **Display:** Placeholder text "hh:mm" for visual guidance
+    - **Calculation:** Treats empty fields as zero for total calculations
+    - **Business Use:** Flexible time entry with clear visual cues
+
+### Visual and User Experience Features
+
+#### Enhanced Interface Elements:
+22. **Today Highlighting:**
+    - **Purpose:** Visual indication of current day column
+    - **Features:** Different color scheme for today's date
+    - **Business Use:** Quick orientation and focus on current day entry
+
+23. **New Row Highlighting:**
+    - **Purpose:** Visual emphasis on recently added rows
+    - **Features:** Gray background for new entries until first edit
+    - **Business Use:** Clear identification of new vs. existing entries
+
+24. **Responsive Design:**
+    - **Purpose:** Optimal viewing across different screen sizes
+    - **Features:** Scrollable table with mobile-friendly adjustments
+    - **Business Use:** Flexibility for various devices and work environments
+
+## Business Goals and Decision-Making Support
+
+### Project Management and Resource Allocation:
+- **Project Time Tracking:** Comprehensive monitoring of time allocation across multiple concurrent projects
+- **Resource Optimization:** Data-driven insights for workforce capacity planning and resource reallocation
+- **Project Progress Monitoring:** Real-time visibility into project advancement through time investment analysis
+- **Capacity Planning:** Historical time data analysis for future project staffing and timeline estimation
+
+### Financial Management and Billing:
+- **Accurate Client Billing:** Precise time tracking for hourly-based client invoicing and project costing
+- **Project Profitability Analysis:** Time-cost analysis for project margin evaluation and pricing optimization
+- **Budget Control:** Real-time monitoring of project time budgets with variance analysis and alerts
+- **Cost Center Management:** Department and team-based time allocation for internal cost management
+
+### Employee Productivity and Performance:
+- **Individual Performance Tracking:** Employee-specific productivity analysis and goal setting
+- **Team Efficiency Measurement:** Comparative analysis of team performance and productivity trends
+- **Workload Distribution:** Balanced task assignment based on historical time allocation patterns
+- **Overtime Management:** Automated tracking of extended work hours for compliance and compensation
+
+### Operational Efficiency and Process Improvement:
+- **Time Entry Standardization:** Consistent time recording processes across the organization
+- **Workflow Optimization:** Task duration analysis for process improvement and efficiency gains
+- **Automation Opportunities:** Identification of repetitive tasks for automation consideration
+- **Quality Assurance:** Time validation and error prevention for reliable data collection
+
+### Strategic Planning and Business Intelligence:
+- **Historical Trend Analysis:** Long-term time allocation patterns for strategic resource planning
+- **Market Analysis:** Project type and duration analysis for service offering optimization
+- **Growth Planning:** Capacity analysis for business expansion and hiring decisions
+- **Competitive Intelligence:** Industry standard comparison through time efficiency metrics
+
+### Compliance and Reporting:
+- **Regulatory Compliance:** Accurate time records for labor law compliance and audit requirements
+- **Client Transparency:** Detailed time reports for client relationship management and trust building
+- **Internal Auditing:** Comprehensive time trails for internal review and accountability
+- **Documentation Standards:** Standardized time recording for consistent reporting and analysis
+
+### Team Coordination and Communication:
+- **Cross-Project Visibility:** Team awareness of resource allocation and project priorities
+- **Manager Oversight:** Supervisory tools for team time management and approval workflows
+- **Workload Balancing:** Even distribution of work based on current time commitments
+- **Project Collaboration:** Shared understanding of project time investment and progress
+
+### Quality and Customer Service:
+- **Service Delivery Tracking:** Time allocation analysis for service quality improvement
+- **Customer Satisfaction:** Accurate project timelines based on historical time data
+- **Response Time Management:** Time tracking for customer support and service delivery
+- **Continuous Improvement:** Time data analysis for service enhancement and optimization
+
+### Risk Management and Business Continuity:
+- **Resource Risk Assessment:** Identification of over-allocated resources and burnout prevention
+- **Project Risk Monitoring:** Time variance analysis for early project risk identification
+- **Business Continuity Planning:** Resource backup planning based on time allocation patterns
+- **Workload Security:** Balanced work distribution for sustainable business operations
+
+### Innovation and Development:
+- **R&D Time Tracking:** Innovation project time allocation for development investment analysis
+- **Training and Development:** Professional development time tracking for employee growth
+- **Process Innovation:** Time efficiency analysis for operational improvement opportunities
+- **Technology Investment:** Tool and system evaluation based on time savings and efficiency gains
+
+This comprehensive time tracking system empowers organizations to achieve superior project management, accurate financial control, enhanced employee productivity, and strategic business growth through data-driven time management and intelligent resource optimization. The system ensures operational excellence while supporting both immediate operational needs and long-term strategic business objectives.
